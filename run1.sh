@@ -1,0 +1,6 @@
+#!/bin/bash
+# /home/mint/Dev/DiFaReli/difareli-faster/experiment_scripts/TPAMI/sh_to_envs/video_out_512
+
+CUDA_VISIBLE_DEVICES=1 python demo_bg.py --input_fg /data/mint/DPM_Dataset/ffhq_256_with_anno/ffhq_256/valid/65112.jpg --input_bg /home/mint/Dev/DiFaReli/difareli-faster/experiment_scripts/TPAMI/sh_to_envs/video_out_512/src=65112.jpg_dst=60065.jpg/map_centered.mp4 --save_dir ./ic-light_out/src=65112.jpg_dst=60065.jpg/ --image_width 512 --image_height 512 --prompt "handsome man" && wait &&
+CUDA_VISIBLE_DEVICES=1 python demo_bg.py --input_fg /data/mint/DPM_Dataset/ffhq_256_with_anno/ffhq_256/valid/65112.jpg --input_bg /home/mint/Dev/DiFaReli/difareli-faster/experiment_scripts/TPAMI/sh_to_envs/video_out_512/src=65112.jpg_dst=65284.jpg/map_centered.mp4 --save_dir ./ic-light_out/src=65112.jpg_dst=65284.jpg/ --image_width 512 --image_height 512 --prompt "handsome man" && wait &&
+CUDA_VISIBLE_DEVICES=1 python demo_bg.py --input_fg /data/mint/DPM_Dataset/ffhq_256_with_anno/ffhq_256/valid/65262.jpg --input_bg /home/mint/Dev/DiFaReli/difareli-faster/experiment_scripts/TPAMI/sh_to_envs/video_out_512/src=65262.jpg_dst=69267.jpg/map_centered.mp4 --save_dir ./ic-light_out/src=65262.jpg_dst=69267.jpg/ --image_width 512 --image_height 512 --prompt "handsome man"
